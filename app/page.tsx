@@ -18,9 +18,9 @@ export default function Home() {
   const [country, setCount] = useState('none')
 
   useEffect(()=>{
-    let response = async () => {
-      let data = await fetch('./api/country');
-      let res = await data.json()
+    const response = async () => {
+      const data = await fetch('./api/country');
+      const res = await data.json()
       setFilter(res)
       if(country === 'none'){
         setDas(res)

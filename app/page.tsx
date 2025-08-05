@@ -25,7 +25,7 @@ export default function Home() {
       if(country === 'none'){
         setDas(res)
       }else{
-        let filtered = res.filter((e: {region: string})=> e.region == country);
+        const filtered = res.filter((e: {region: string})=> e.region == country);
         setDas(filtered);
       }
     };

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Toggle from "@/app/toggle";
 
 
-export default function country(){
+export default function Country(){
     type Country = {
         name: string;
         nativeName: string;

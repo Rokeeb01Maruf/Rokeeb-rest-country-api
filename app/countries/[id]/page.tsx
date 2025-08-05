@@ -43,7 +43,7 @@ export default function Country(){
                 })
         }
         data()
-    }, [])
+    }, [id])
 
     return(
         <div className="bg-gray-100 min-h-screen dark:bg-gray-800 text-gray-950 dark:text-white">

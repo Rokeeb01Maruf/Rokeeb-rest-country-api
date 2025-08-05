@@ -23,7 +23,6 @@ export default function Country(){
 
     const {id} = useParams();
     const [country, setCountry] = useState<Country []>([])
-    const [mode, setMode] = useState('Dark mode')
     const [lang, setLang] = useState(3)
     const router = useRouter();
 

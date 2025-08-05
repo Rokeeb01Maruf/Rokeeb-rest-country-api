@@ -41,8 +41,6 @@ export default function Home() {
         setDas(filter)
       }
   }
-
-  const handleTheme = () =>{}
   return (
     <div className="bg-gray-100 min-h-screen dark:bg-black text-gray-800 dark:text-white">
       <header className="bg-white dark:bg-gray-700 top-0 left-0 w-full flex justify-between px-[50px] sticky py-[25px] border-b-[3px] border-gray-300">

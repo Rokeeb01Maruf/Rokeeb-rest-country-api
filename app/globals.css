@@ -3,3 +3,6 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 @source "./**/*.{js,ts,jsx,tsx,mdx}";
+html, body {
+  @apply overflow-x-hidden;
+}

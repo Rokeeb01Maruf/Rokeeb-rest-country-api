@@ -18,7 +18,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className="max-w-full">
+      <body className="max-w-full overflow-x-hidden">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
           {children}
         </ThemeProvider>

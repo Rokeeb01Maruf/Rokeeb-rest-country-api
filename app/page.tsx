@@ -43,7 +43,7 @@ export default function Home() {
   }
   return (
     <div className="bg-gray-100 min-h-screen dark:bg-black text-gray-800 dark:text-white max-w-full">
-      <header className="bg-white dark:bg-gray-700 top-0 left-0 w-full flex justify-between px-[50px] sticky py-[25px] border-b-[3px] border-gray-300 ">
+      <header className="bg-white dark:bg-gray-700 top-0 left-0 w-full flex justify-between px-[50px] max-sm:px-[2%] sticky py-[25px] border-b-[3px] border-gray-300 ">
         <p className="font-bold dark:text-white">Where in the world?</p>
         <Toggle/>
       </header>

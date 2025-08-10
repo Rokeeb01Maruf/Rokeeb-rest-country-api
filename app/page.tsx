@@ -48,7 +48,7 @@ export default function Home() {
         <Toggle/>
       </header>
       <main className="bg-gray-100 dark:bg-gray-700">
-        <div className="search items-center flex sticky bg-gray-100 gap-x-[50px] max-sm:gap-x-[20px] justify-between  left-0 dark:bg-gray-800 px-[50px]  max-w-screen py-[25px] top-[75px]">
+        <div className="search items-center flex sticky bg-gray-100 gap-x-[50px] max-sm:gap-x-[20px] justify-between  left-0 dark:bg-gray-800 px-[50px]  sm:px-[4%] max-w-screen py-[25px] top-[75px]">
           <input type="search" placeholder="Search for a country..." id="" onChange={handleChange} className="dark:text-white dark:placeholder-white dark:bg-gray-700 h-9.5 text-sm outline-0 pl-7.5 max-w-lg max-md:min-w-[350px] max-sm:min-w-[200px] rounded leading-none shadow-[0_0_10px_rgba(0,0,0,0.4)] bg-white" />
           <img src='./icons8_search.svg' onClick={()=>handleChange} className="absolute w-[24px] rounded cursor-pointer left-13.5"/>
           <div>

@@ -69,7 +69,7 @@ export default function Home() {
             }})=>(
               <div key={e.name} className="max-w-[260px] max-sm:mx-auto max-sm:max-w-[300px] max-sm:w-full pb-12 rounded bg-white mb-12 dark:bg-gray-700">
                 <Link href={`./countries/${e.name}`}>
-                  <img src={e.flags.png} alt={`${e.name}'s flag`} className=" w-full h-[180px]"/>
+                  <img src={e.flags.png} alt={`${e.name}'s flag`} className=" w-full h-[180px] object-cover"/>
                   <p className="p-5 font-bold text-xl">{e.name}</p>
                   <p className="pb-1 px-5"><span className="font-bold">Population: </span>{e.population.toLocaleString()}</p>
                   <p className="pb-1 px-5"><span className="font-bold">Region: </span>{e.region}</p>

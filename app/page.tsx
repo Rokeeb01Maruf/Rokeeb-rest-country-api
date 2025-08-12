@@ -47,12 +47,12 @@ export default function Home() {
         <p className="font-bold dark:text-white">Where in the world?</p>
         <Toggle/>
       </header>
-      <main className="bg-gray-100 dark:bg-gray-700">
+      <main className="bg-gray-100 dark:bg-gray-600">
         <div className="search items-center flex sticky bg-gray-100 justify-between  left-0 dark:bg-gray-800 px-[clamp(20px,2.6vw,50px)]  sm:px-[20px] max-w-screen py-[25px] top-[75px]">
           <input type="search" placeholder="Search for a country..." id="" onChange={handleChange} className="dark:text-white dark:placeholder-white dark:border-white dark:bg-gray-700 h-9.5 text-sm outline-0 pl-7.5 max-w-lg max-md:min-w-[350px] max-sm:min-w-[200px] rounded relative leading-none shadow-[0_0_10px_rgba(0,0,0,0.4)] bg-white" />
           <img src='./icons8_search.svg' onClick={()=>handleChange} className="absolute w-[24px] rounded cursor-pointer left-[clamp(20px,2.6vw,50px)]"/>
           <div>
-            <select name="countries" id="" className="text-lg dark:bg-gray-700 max-md:text-md max-sm:text-sm">
+            <select name="countries" id="" className="text-lg dark:bg-gray-600 max-md:text-md max-sm:text-sm">
               <option onClick={()=>setCount('none')}>Filter by Region</option>
               <option onClick={()=>setCount('Africa')} value="Africa">Africa</option>
               <option onClick={()=>setCount('America')} value="America">America</option>
@@ -67,7 +67,7 @@ export default function Home() {
             das.map((e:{name: string, region: string, capital: string, population: number, flags: {
               png: string
             }})=>(
-              <div key={e.name} className="max-w-[260px] max-sm:mx-auto max-sm:max-w-[300px] max-sm:w-full pb-12 rounded bg-white mb-12 dark:bg-gray-800">
+              <div key={e.name} className="max-w-[260px] max-sm:mx-auto max-sm:max-w-[300px] max-sm:w-full pb-12 rounded bg-white mb-12 dark:bg-gray-600">
                 <Link href={`./countries/${e.name}`}>
                   <img src={e.flags.png} alt={`${e.name}'s flag`} className=" w-full h-[180px] object-cover"/>
                   <p className="p-5 font-bold text-xl">{e.name}</p>

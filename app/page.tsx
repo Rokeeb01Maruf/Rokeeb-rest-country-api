@@ -67,7 +67,7 @@ export default function Home() {
             das.map((e:{name: string, region: string, capital: string, population: number, flags: {
               png: string
             }})=>(
-              <div key={e.name} className="max-w-[260px] max-sm:mx-auto max-sm:max-w-[300px] max-sm:w-full pb-12 rounded bg-white mb-12 dark:bg-bg-[#364153]">
+              <div key={e.name} className="max-w-[260px] max-sm:mx-auto max-sm:max-w-[300px] max-sm:w-full pb-12 rounded bg-white mb-12 dark:bg-[#364153]">
                 <Link href={`./countries/${e.name}`}>
                   <img src={e.flags.png} alt={`${e.name}'s flag`} className=" w-full h-[180px] object-cover"/>
                   <p className="p-5 font-bold text-xl">{e.name}</p>

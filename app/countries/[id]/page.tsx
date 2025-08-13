@@ -57,7 +57,7 @@ export default function Country(){
                     {
                         country.map((e)=>(
                             <div key={e.capital} className="mx-[10px] my-[50px] max-[900px]:gap-x-[5rem] gap-x-24 flex max-w-[90%] justify-center max-[681px]:flex-col max-[681px]:align-middle max-[681px]:my-[20px] ">
-                                <img src={e.flags.png} className="max-w-[340px] max-h-[250px] max-[681px]:w-[360px] max-[681px]:max-w-[360px]  max-[681px]:mx-auto max-[500px]:w-[80%]" alt="" />
+                                <img src={e.flags.png} className="max-w-[340px] max-h-[250px] max-[681px]:w-[360px] max-[681px]:max-w-[360px]  max-[681px]:mx-auto max-[500px]:w-[100%]" alt="" />
                                 <div>
                                     <div className="flex gap-x-24 max-[900px]:gap-x-0 max-[900px]:flex-col">
                                         <div className="max-[900px]:mt-4">

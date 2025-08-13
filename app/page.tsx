@@ -48,8 +48,8 @@ export default function Home() {
         <Toggle/>
       </header>
       <main className="bg-[hsl(0, 0%, 99%)] dark:bg-[hsl(207, 26%, 17%)]">
-        <div className="search items-center flex sticky bg-[hsl(0, 0%, 99%)] justify-between  left-0 dark:[hsl(207, 26%, 17%)] px-[clamp(20px,2.6vw,50px)]  sm:px-[20px] max-w-screen py-[25px] top-[75px]">
-          <input type="search" placeholder="Search for a country..." id="" onChange={handleChange} className="dark:text-white dark:placeholder-white  dark:bg-gray-800 h-9.5 text-sm outline-0 pl-7.5 max-w-lg max-md:min-w-[350px] max-sm:min-w-[200px] rounded relative leading-none shadow-[0_0_10px_rgba(0,0,0,0.4)] bg-white" />
+        <div className="search items-center flex sticky bg-[hsl(0, 0%, 99%)] justify-between  left-0 dark:bg-gray-800 px-[clamp(20px,2.6vw,50px)]  sm:px-[20px] max-w-screen py-[25px] top-[75px]">
+          <input type="search" placeholder="Search for a country..." id="" onChange={handleChange} className="dark:text-white dark:placeholder-white  dark:bg-gray-800 h-9.5 text-sm outline-0 pl-7.5 max-w-lg max-md:min-w-[350px] max-sm:min-w-[180px] rounded relative leading-none shadow-[0_0_10px_rgba(0,0,0,0.4)] bg-white" />
           <img src='./icons8_search.svg' onClick={()=>handleChange} className="absolute w-[24px] rounded cursor-pointer left-[clamp(20px,2.6vw,50px)]"/>
           <div>
             <select name="countries" id="" className="text-lg max-md:text-md max-sm:text-sm">
